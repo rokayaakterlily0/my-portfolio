@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+.img{
+    max-width: 100%;
+}
+
+.cmbtn{
+    background-color:#fd6e0a;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.outbtn{
+    background-color:white;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    color:#fd6e0a;
+    border: 1px solid #fd6e0a;
+    cursor: pointer;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+nav{
+    
+display: flex;
+    justify-content:space-between ;
+    padding: 8px 0;
+}
+header{
+    background-color: #fff8f3FF;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 10px;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+
+}
+.logo{
+    font-weight: bold;
+    font-size: 32px;
+}
+.clr{
+    color: coral;
+}
+.hero-parent-root{
+    background-color: #fff8f3FF;
+}
+.hero-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.hero-left h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.hero-left-p-1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.hero-left-btn-parent{
+    margin-top: 12px;
+}
+
+/* about us section */
+.about-parent{
+    background-color:#fff8f3FF ;
+    margin:70px auto;
+    border-radius: 10px;
+    padding: 120px;
+    text-align: center;
+}
+.about-parent p{
+    margin: 10px ;
+}
+.about-box-parent{
+    display: flex;
+     justify-content: space-between;
+     gap: 8px;
+}
+.about-box-parent .box{
+    /* background-color: rgb(188, 153, 129); */
+    padding: 4px;
+    border-radius: 4px;
+}
+/* what i do section */
+.wid-parent{
+    margin: 40px auto;
+    text-align: center;
+}
+.wid-card-container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+.wid-card-container .wid-card{
+    border: 2px solid rgb(233, 153, 95);
+    padding: 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+.wid-card-container .wid-card p{
+    color: rgb(152, 149, 149);
+}
+.wid-card-container .wid-card h2{
+    margin: 10px 0;
+}
+ /* what id do section end */
+
+ /* my amazing gallery start */
+
+ .gallery-parent{
+    text-align: center;
+
+ }
+ .gallery{
+    margin-top: 20px;
+    gap: 12px;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-auto-rows: 240px;
+    grid-template-areas: 
+   "one three five"
+   "two three six"
+   "two four six"
+ }
+ .gallery img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+
+ .box-1{
+    grid-area: one;
+ }
+ .box-2{
+    grid-area: two;
+ }
+ .box-3{
+    grid-area: three;
+ }
+ .box-4{
+    grid-area: four;
+ }
+ .box-11{
+    grid-area: five;
+ }
+.box-12{
+    grid-area: six;
+ }
+
+ /* footer start */
+
+ footer{
+    text-align: center;
+    margin-top: 70px !important;
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    background-color: #fff8f3FF;
+    padding: 20px;
+    border-radius: 10px;
+ }
+ footer form{
+    padding: 20px;
+ }
+ .footer-left p{
+    margin-top: 10px;
+ }
+
+ footer form input, footer form textarea{
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: block;
+    margin-bottom: 8px;
+    width:100%;
+
+ }
